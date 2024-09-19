@@ -19,7 +19,12 @@
 Для каждого запроса, кроме **NEW_BUS**, выведите соответствующий ответ на него:
 
 * На запрос **BUSES_FOR_STOP *stop*** выведите через пробел список автобусов, проезжающих через эту остановку, в том порядке, в котором они создавались командами **NEW_BUS**. Если остановка ***stop*** не существует, выведите **No stop**.
-* На запрос **STOPS_FOR_BUS *bus*** выведите описания остановок маршрута ***bus*** в отдельных строках в том порядке, в котором они были заданы в соответствующей команде **NEW_BUS**. Описание каждой остановки ***stop*** должно иметь вид **Stop *stop: bus1 bus2 ...***, где ***bus1 bus2 ...*** — список автобусов, проезжающих через остановку ***stop***, в порядке, в котором они создавались командами **NEW_BUS**, за исключением исходного маршрута ***bus***. Если через остановку ***stop*** не проезжает ни один автобус, кроме ***bus***, вместо списка автобусов для неё выведите **no interchange**. Если маршрут ***bus*** не существует, выведите **No bus**.
+* На запрос **STOPS_FOR_BUS *bus*** выведите описания остановок маршрута ***bus*** в отдельных строках в том порядке, 
+ в котором они были заданы в соответствующей команде **NEW_BUS**. Описание каждой остановки ***stop*** должно иметь вид 
+ **Stop *stop: bus1 bus2 ...***, где ***bus1 bus2 ...*** — список автобусов, проезжающих через остановку ***stop***, 
+ в порядке, в котором они создавались командами **NEW_BUS**, за исключением исходного маршрута ***bus***. 
+ Если через остановку ***stop*** не проезжает ни один автобус, кроме ***bus***, вместо списка автобусов для неё выведите 
+ **no interchange**. Если маршрут ***bus*** не существует, выведите **No bus**.
 * На запрос **ALL_BUSES** выведите описания всех автобусов в алфавитном порядке. Описание каждого маршрута ***bus*** должно иметь вид **Bus *bus: stop1 stop2 ...***, где ***stop1 stop2 ...*** — список остановок автобуса ***bus*** в порядке, в котором они были заданы в соответствующей команде **NEW_BUS**. Если автобусы отсутствуют, выведите **No buses**.
 
 ##### Предупреждение #####
@@ -27,25 +32,26 @@
 
 ##### Пример #####
 ###### Ввод ######
-```commandline
 10
-ALL_BUSES
-BUSES_FOR_STOP Marushkino
-STOPS_FOR_BUS 32K
-NEW_BUS 32 3 Tolstopaltsevo Marushkino Vnukovo
-NEW_BUS 32K 6 Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
-BUSES_FOR_STOP Vnukovo
-NEW_BUS 950 6 Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
-NEW_BUS 272 4 Vnukovo Moskovsky Rumyantsevo Troparyovo
+
+ALL_BUSES //No buses
+**BUSES_FOR_STOP Marushkino //No stop
+**STOPS_FOR_BUS 32K //No bus
+**NEW_BUS 32 3 Tolstopaltsevo Marushkino Vnukovo
+**NEW_BUS 32K 6 Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
+**BUSES_FOR_STOP Vnukovo //32 32K
+**NEW_BUS 950 6 Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
+**NEW_BUS 272 4 Vnukovo Moskovsky Rumyantsevo Troparyovo
 STOPS_FOR_BUS 272
 ALL_BUSES
-```
 ###### Вывод ######
 ```commandline
+
 No buses
 No stop
 No bus
 32 32K
+
 Stop Vnukovo: 32 32K 950
 Stop Moskovsky: no interchange
 Stop Rumyantsevo: no interchange

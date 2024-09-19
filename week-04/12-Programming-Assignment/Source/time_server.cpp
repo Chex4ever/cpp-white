@@ -9,6 +9,7 @@ string AskTimeServer() {
        * выброс исключения system_error
        * выброс другого исключения с сообщением.
     */
+    return "as your bunny wrote";
 }
 
 class TimeServer {
@@ -20,19 +21,20 @@ public:
             поля LastFetchedTime
             * если AskTimeServer() бросила другое исключение, пробросьте его дальше.
         */
+        return "as your bunny wrote";
     }
 
 private:
     string LastFetchedTime = "00:00:00";
 };
 
-int main() {
-    // Меняя реализацию функции AskTimeServer, убедитесь, что это код работает корректно
-    TimeServer ts;
-    try {
-        cout << ts.GetCurrentTime() << endl;
-    } catch (exception& e) {
-        cout << "Exception got: " << e.what() << endl;
-    }
-    return 0;
-}
+//int main() {
+//    // Меняя реализацию функции AskTimeServer, убедитесь, что это код работает корректно
+//    TimeServer ts;
+//    try {
+//        cout << ts.GetCurrentTime() << endl;
+//    } catch (exception& e) {
+//        cout << "Exception got: " << e.what() << endl;
+//    }
+//    return 0;
+//}
