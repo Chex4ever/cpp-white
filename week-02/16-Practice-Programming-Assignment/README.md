@@ -10,7 +10,6 @@ set<string> BuildMapValuesSet(const map<int, string>& m) {
 
 ##### Пример #####
 ###### Код ######
-```objectivec
 set<string> values = BuildMapValuesSet({
     {1, "odd"},
     {2, "even"},
@@ -22,7 +21,6 @@ set<string> values = BuildMapValuesSet({
 for (const string& value : values) {
   cout << value << endl;
 }
-```
 
 ###### Вывод ######
 ```objectivec

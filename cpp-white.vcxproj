@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{232E4A32-2066-43A6-9923-CFE4D307DE13}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src-week3\w3-1.cpp" />
+    <ClCompile Include="src-week3\w3-2.cpp" />
+    <ClCompile Include="src-week3\w3-3.cpp" />
+    <ClCompile Include="src-week3\w3-4.cpp" />
+    <ClCompile Include="src-week3\w3-5.cpp" />
+    <ClCompile Include="src-week3\w3-6.cpp" />
+    <ClCompile Include="src-week3\w3-7.cpp" />
+    <ClCompile Include="src-week3\w3-8.cpp" />
+    <ClCompile Include="src-week4\rational.cpp" />
+    <ClCompile Include="src-week4\w4-1.cpp" />
+    <ClCompile Include="src-week4\w4-10.cpp" />
+    <ClCompile Include="src-week4\w4-11.cpp" />
+    <ClCompile Include="src-week4\w4-12.cpp" />
+    <ClCompile Include="src-week4\w4-2.cpp" />
+    <ClCompile Include="src-week4\w4-3.cpp" />
+    <ClCompile Include="src-week4\w4-4.cpp" />
+    <ClCompile Include="src-week4\w4-5.cpp" />
+    <ClCompile Include="src-week4\w4-6.cpp" />
+    <ClCompile Include="src-week4\w4-7.cpp" />
+    <ClCompile Include="src-week4\w4-8.cpp" />
+    <ClCompile Include="src-week4\w4-9.cpp" />
+    <ClCompile Include="src-week5\date.cpp" />
+    <ClCompile Include="src-week5\w5-1.cpp" />
+    <ClCompile Include="src-week5\whitedb.cpp" />
+    <ClCompile Include="testweek2.cpp" />
+    <ClCompile Include="src-week1-2\PeopleQueue.cpp" />
+    <ClCompile Include="src-week1-2\Todo.cpp" />
+    <ClCompile Include="src-week1-2\w1-1.cpp" />
+    <ClCompile Include="src-week1-2\w1-2.cpp" />
+    <ClCompile Include="src-week1-2\w1-3.cpp" />
+    <ClCompile Include="src-week1-2\w1-4.cpp" />
+    <ClCompile Include="src-week1-2\w1-5.cpp" />
+    <ClCompile Include="src-week1-2\w1-6.cpp" />
+    <ClCompile Include="src-week1-2\w1-7.cpp" />
+    <ClCompile Include="src-week1-2\w1-8.cpp" />
+    <ClCompile Include="src-week1-2\w1-9.cpp" />
+    <ClCompile Include="src-week1-2\w2-1.cpp" />
+    <ClCompile Include="src-week1-2\w2-10.cpp" />
+    <ClCompile Include="src-week1-2\w2-11.cpp" />
+    <ClCompile Include="src-week1-2\w2-12.cpp" />
+    <ClCompile Include="src-week1-2\w2-13.cpp" />
+    <ClCompile Include="src-week1-2\w2-14.cpp" />
+    <ClCompile Include="src-week1-2\w2-15.cpp" />
+    <ClCompile Include="src-week1-2\w2-16.cpp" />
+    <ClCompile Include="src-week1-2\w2-17.cpp" />
+    <ClCompile Include="src-week1-2\w2-18.cpp" />
+    <ClCompile Include="src-week1-2\w2-2.cpp" />
+    <ClCompile Include="src-week1-2\w2-3.cpp" />
+    <ClCompile Include="src-week1-2\w2-4.cpp" />
+    <ClCompile Include="src-week1-2\w2-5.cpp" />
+    <ClCompile Include="src-week1-2\w2-6.cpp" />
+    <ClCompile Include="src-week1-2\w2-7.cpp" />
+    <ClCompile Include="src-week1-2\w2-8.cpp" />
+    <ClCompile Include="src-week1-2\w2-9.cpp" />
+    <ClCompile Include="testweek3.cpp" />
+    <ClCompile Include="testweek4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src-week1-2\PeopleQueue.hpp" />
+    <ClInclude Include="src-week1-2\Todo.hpp" />
+    <ClInclude Include="src-week1-2\VectorToString.hpp" />
+    <ClInclude Include="src-week1-2\w2-1.hpp" />
+    <ClInclude Include="src-week1-2\w2-10.hpp" />
+    <ClInclude Include="src-week1-2\w2-11.hpp" />
+    <ClInclude Include="src-week1-2\w2-12.hpp" />
+    <ClInclude Include="src-week1-2\w2-13.hpp" />
+    <ClInclude Include="src-week1-2\w2-14.hpp" />
+    <ClInclude Include="src-week1-2\w2-15.hpp" />
+    <ClInclude Include="src-week1-2\w2-16.hpp" />
+    <ClInclude Include="src-week1-2\w2-17.hpp" />
+    <ClInclude Include="src-week1-2\w2-18.hpp" />
+    <ClInclude Include="src-week1-2\w2-2.hpp" />
+    <ClInclude Include="src-week1-2\w2-3.hpp" />
+    <ClInclude Include="src-week1-2\w2-4.hpp" />
+    <ClInclude Include="src-week1-2\w2-5.hpp" />
+    <ClInclude Include="src-week1-2\w2-6.hpp" />
+    <ClInclude Include="src-week1-2\w2-7.hpp" />
+    <ClInclude Include="src-week1-2\w2-8.hpp" />
+    <ClInclude Include="src-week1-2\w2-9.hpp" />
+    <ClInclude Include="src-week3\w3-1.hpp" />
+    <ClInclude Include="src-week3\w3-2.hpp" />
+    <ClInclude Include="src-week3\w3-3.hpp" />
+    <ClInclude Include="src-week3\w3-4.hpp" />
+    <ClInclude Include="src-week3\w3-5.hpp" />
+    <ClInclude Include="src-week3\w3-6.hpp" />
+    <ClInclude Include="src-week3\w3-7.hpp" />
+    <ClInclude Include="src-week3\w3-8.hpp" />
+    <ClInclude Include="src-week4\rational.hpp" />
+    <ClInclude Include="src-week4\w4-1.hpp" />
+    <ClInclude Include="src-week4\w4-10.hpp" />
+    <ClInclude Include="src-week4\w4-11.hpp" />
+    <ClInclude Include="src-week4\w4-12.hpp" />
+    <ClInclude Include="src-week4\w4-2.hpp" />
+    <ClInclude Include="src-week4\w4-3.hpp" />
+    <ClInclude Include="src-week4\w4-4.hpp" />
+    <ClInclude Include="src-week4\w4-5.hpp" />
+    <ClInclude Include="src-week4\w4-6.hpp" />
+    <ClInclude Include="src-week4\w4-7.hpp" />
+    <ClInclude Include="src-week4\w4-8.hpp" />
+    <ClInclude Include="src-week4\w4-9.hpp" />
+    <ClInclude Include="src-week5\date.hpp" />
+    <ClInclude Include="src-week5\w5-1.hpp" />
+    <ClInclude Include="src-week5\whitedb.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
